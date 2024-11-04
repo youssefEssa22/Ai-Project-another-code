@@ -9,7 +9,7 @@ public class app {
         };
         Node start = new Node(initialState);
         long startTime = System.currentTimeMillis();
-        solver.AStar(start);
+        solver.DFS(start);
         long endTime = System.currentTimeMillis();
         long runtime = endTime - startTime;
         System.out.println("Runtime: " + runtime + " milliseconds");
